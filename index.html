@@ -92,7 +92,7 @@ html.reduce *{animation:none!important;transition:none!important}
     <button class="motion" id="motion" type="button" aria-pressed="false">減少動態</button>
   </div>
 </nav>
-<main>
+<main>	
   <section class="card hero" id="home" aria-labelledby="title">
     <svg viewBox="0 0 480 280" role="img" aria-labelledby="art-title" xmlns="http://www.w3.org/2000/svg">
       <title id="art-title">台北 101、聖誕樹、機場捷運，以及戴藍色警帽嘅 PAW Patrol 阿奇</title>
@@ -173,7 +173,7 @@ html.reduce *{animation:none!important;transition:none!important}
     <path d="M0-22Q4-18 1-16Q-3-16-2-19Q-1-17 0-22Z" fill="#E97E72" stroke="none"/>
     <path d="M-4 19H4V23L0 26L-4 23Z" fill="#F6D27A" stroke-width="1.5"/>
   </g>
-</g>
+</g>	
         <!-- PAW Patrol 阿奇：聖誕樹右下方 -->
         <g transform="translate(444 230) scale(.61)">
           <ellipse cx="0" cy="34" rx="32" ry="4" fill="#B9DAA5" stroke="none"/>
@@ -275,7 +275,7 @@ html.reduce *{animation:none!important;transition:none!important}
         <div>入住<br><strong>12/25（五）</strong></div>
         <div>退房<br><strong>12/28（一）</strong></div>
       </div>
-      <p>抵達後先去酒店放低行李；如果未到入住時間，先問可唔可以寄存。Day 4 退房後寄存行李，行完西門町再返酒店拎喼。</p>
+      <p> Day 1抵達後先去酒店放低行李寄存。Day 4 退房後寄存行李，行完西門町再返酒店拎喼。</p>
       <p class="note">正式入住、退房時間同寄存安排，以酒店確認為準。</p>
     </article>
   </section>
@@ -285,7 +285,7 @@ html.reduce *{animation:none!important;transition:none!important}
 <script>
 const days = [
   ['12/25（五）','🎄 台北車站・華山文創園區・聖誕夜景',[
-    ['抵達後','桃園機場 → A1 台北車站 → 亞士都精品酒店','由桃園機場搭機捷到 A1 台北車站，步行轉去捷運北門站，再搭捷運到中山站。到酒店辦理入住、放低行李；如果未到入住時間，先問可唔可以寄存。','rail walk metro'],
+    ['抵達後','桃園機場 → A1 台北車站 → 亞士都精品酒店','由桃園機場搭機捷到 A1 台北車站，步行轉去捷運北門站，再搭捷運到中山站。到酒店辦理入住、放低行李。','rail walk metro'],
     ['上午','中山 → 台北車站','由中山返北車，喺台北車站行一轉，睇吓聖誕佈置。','walk'],
     ['午餐','咖啡弄（站前店）','','','booked'],
     ['下午','華山1914文創園區','行吓文創園區、睇展。','walk','key'],
@@ -296,14 +296,14 @@ const days = [
   ['12/26（六）','🪐 士林天文館・赤峰街・南機場夜市',[
     ['早餐','味鼎蛋餅','離酒店同捷運站都有啲距離，可以考慮叫 Uber。','uber'],
     ['上午','臺北市立天文科學教育館','搭捷運去士林，參觀天文館。','metro','key'],
-    ['午餐＋手信','雙連站・川畝園麵食館 ＋ COOKIE886','返雙連站食川畝園，再去 COOKIE886 買曲奇手信。想食日式，就改去中山站食魚兵衛太春和食處。','metro'],
+    ['午餐＋手信','雙連站・川畝園麵食館 ＋ COOKIE886','返雙連站食川畝園，再去 COOKIE886 買曲奇手信。如果想食日式，就改去中山站食魚兵衛太春和食處。','metro'],
     ['下午','赤峰街・誠品南西・D+AF','想拎杯嘢邊行邊飲：一沐日（中山南西店）。\n想坐低抖吓：成真咖啡。','walk'],
     ['晚餐','南機場夜市','先返酒店放低戰利品，再搭的士去夜市。\n來來水餃館、湯包棧、鈺師傅上海生煎包、禾甲蒸臭豆腐，可以分住食。\n最後留肚食捲捲村花生捲冰淇淋。','taxi walk','key'],
     ['夜晚・可選','精武門功夫按摩 → 家樂福（桂林店）','可以先去西門町按摩，再去家樂福買零食手信。兩個地方唔係隔籬，攰就搭短程的士；買完直接搭的士返酒店。','walk taxi']
   ]],
   ['12/27（日）','🚂 萬華早午餐・鐵道館・大稻埕',[
     ['早餐','穗月朝食','搭 Uber 去萬華區食早餐。','uber'],
-    ['上午','國立臺灣博物館鐵道部園區','去北門站參觀。鐵道館星期一休館，所以安排星期日。','','key'],
+    ['上午','國立臺灣博物館鐵道部園區','去北門站參觀。鐵道館星期一休館。','','key'],
     ['午餐＋甜品','大稻埕魯肉飯 → Gelato Arjan（阿洋義式冰淇淋）','食完魯肉飯，再去食義式冰淇淋。'],
     ['下午','永樂市場周邊・迪化街','呢段唔使趕，可以慢慢行：買阿仁牛軋餅、去食芋堂食芋頭甜品，再買迪化街純正麥芽餅。','walk','key'],
     ['晚餐','晴光市場一帶','可以揀 THE.春Fusion中山、十巷咖哩、黃記魯肉飯、牛肉麵、晴光紅豆餅等，食完返酒店。']
@@ -321,9 +321,8 @@ const tasks = [
   ['flights','核對來回航班時間同航廈'],
   ['hotel','確認酒店入住、退房及寄存行李安排'],
   ['reservations','核對咖啡弄同六松今苑嘅已定安排'],
-  ['venues','查華山展覽、天文館、鐵道部同聖誕燈飾安排'],
+  ['venues','查華山展覽、天文館、鐵道館同聖誕燈飾安排'],
   ['breakfast','確認星期一阜杭豆漿有冇外送，順便諗定後備早餐'],
-  ['bagels','揀一間去 A1 順路嘅好丘，查星期一營業時間'],
   ['payment','準備悠遊卡、台幣、上網方案同叫車 App'],
   ['souvenirs','預留行李位裝曲奇、牛軋餅、麥芽餅同零食']
 ];
