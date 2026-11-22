@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFFCF6">
+<title>台北聖誕 4 日 3 夜｜旅行手帳</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<style>
+:root{--paper:#FFFCF6;--ink:#3E3A39;--pink:#F2A497;--yellow:#F6D27A;--blue:#A8D3E6;--green:#B9DAA5;--line:3px solid var(--ink)}
+*{box-sizing:border-box}html{scroll-padding-top:68px;scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 Huninn,"PingFang TC",sans-serif}a,button,input,select{color:inherit;font:inherit}button,summary{cursor:pointer}button,input{border:var(--line);border-radius:13px;background:var(--paper);padding:5px 9px}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px dashed var(--ink);outline-offset:3px}
+nav{position:fixed;inset:0 0 auto;z-index:3;height:58px;display:flex;align-items:center;justify-content:center;gap:6px;padding:5px;background:var(--paper);border-bottom:var(--line);font-size:.86rem}nav a{padding:3px;text-decoration:none;white-space:nowrap}nav button{background:var(--green);white-space:nowrap}nav button[aria-pressed=true]{background:var(--blue)}
+main{width:min(100%,780px);margin:auto;padding:74px 14px 32px}section{margin-bottom:30px}h1,h2,h3,p{margin:0}h2{margin-bottom:10px}h1{font-size:clamp(1.6rem,7vw,3rem);line-height:1.25;margin:5px 0 10px}.card{border:var(--line);border-radius:24px;background:var(--paper);box-shadow:4px 4px var(--ink);overflow:hidden}.pad{padding:15px}.hero{text-align:center}.hero svg{display:block;width:100%;height:auto;background:#EFF8FA;border-bottom:var(--line)}.mark{background:var(--yellow);border-radius:9px;padding:0 6px}.count{font-size:1.2rem;background:var(--blue);border:var(--line);border-radius:14px;padding:7px;margin:12px auto 8px;max-width:390px;font-variant-numeric:tabular-nums}details{margin-top:8px}form{margin-top:8px}small{display:block}.flights{display:grid;gap:14px}.ticket-head{background:var(--blue);border-bottom:var(--line);padding:7px 14px}.flight+ .flight .ticket-head{background:var(--pink)}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;position:sticky;top:58px;z-index:2;background:var(--paper);padding:7px 0 10px}.tabs button{line-height:1.25;padding:6px 1px;min-height:49px}.tabs button[aria-selected=true]{background:var(--blue);box-shadow:2px 2px var(--ink)}.tabs button:nth-child(2)[aria-selected=true]{background:var(--pink)}.tabs button:nth-child(3)[aria-selected=true]{background:var(--yellow)}.tabs button:nth-child(4)[aria-selected=true]{background:var(--green)}
+.timeline{list-style:none;border-left:3px dashed var(--ink);margin:12px 0 0 7px;padding:0 0 0 15px}.stop{position:relative;border:var(--line);border-radius:18px;padding:10px 12px;margin-bottom:10px}.stop:before{content:"";position:absolute;left:-25px;top:16px;width:10px;height:10px;border:var(--line);border-radius:50%;background:var(--yellow)}.stop.key{background:#FFF3EA}.pill{display:inline-block;border:2px solid var(--ink);border-radius:99px;padding:0 7px;margin:0 4px 4px 0;font-size:.8rem;background:var(--paper)}.pink{background:var(--pink)}.green{background:var(--green)}.blue{background:var(--blue)}.yellow{background:var(--yellow)}.tags{margin-top:6px}.stop p{white-space:pre-line}.checks{display:grid;gap:7px;margin-top:8px}.checks label{display:flex;align-items:flex-start;gap:7px;border:2px solid var(--ink);border-radius:12px;padding:7px}.checks input{accent-color:#557343;width:18px;height:18px;flex:none}.checks input:checked+span{text-decoration:line-through}.dates{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.dates span{border:var(--line);border-radius:13px;padding:7px;background:var(--blue)}.dates span+span{background:var(--green)}footer{text-align:center}.drift{animation:drift 5s ease-in-out infinite alternate}.float{animation:float 3s ease-in-out infinite}.pop{animation:pop .42s both}@keyframes drift{to{transform:translateX(12px)}}@keyframes float{50%{transform:translateY(-5px)}}@keyframes pop{0%{transform:translateY(9px) scale(.98);opacity:.6}65%{transform:translateY(-4px) scale(1.01)}100%{transform:none;opacity:1}}
+html.reduce{scroll-behavior:auto}html.reduce *{animation:none!important}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}@media(min-width:600px){.flights{grid-template-columns:1fr 1fr}nav{gap:16px}}
+</style>
+</head>
+<body>
+<nav aria-label="主選單">
+  <a href="#home">首頁</a><a href="#flights">航班</a><a href="#days">行程</a><a href="#todo">清單</a><a href="#hotel">住宿</a>
+  <button id="motion" type="button" aria-pressed="false">減少動態</button>
+</nav>
+<main>
+  <section id="home" class="hero card">
+    <svg viewBox="0 0 480 220" role="img" aria-label="台北 101、聖誕樹、遠山同機場捷運嘅繪本插圖">
+      <g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+        <circle cx="385" cy="51" r="25" fill="#F6D27A"/>
+        <path class="drift" d="M31 62q2-13 18-13 9-17 24-9 14-3 20 10 13 1 15 12z" fill="#FFFCF6"/>
+        <path d="M0 143Q55 87 124 129q54-62 107-10 50-44 103 10 59-38 146 5v86H0z" fill="#B9DAA5"/>
+        <path d="M0 176q105-36 199 0 97-32 181-4 54-19 100-11v59H0z" fill="#FFFCF6"/>
+        <g fill="#A8D3E6">
+          <path d="M213 175v-45h48v45zM217 137l-5-17h50l-5 17zM218 120l-5-17h48l-5 17zM219 103l-5-17h46l-5 17zM220 86l-5-17h44l-5 17zM222 69l-5-17h40l-5 17zM230 52V35h14v17z"/>
+          <path d="M237 35V17m-9 130v21m18-21v21" fill="none"/>
+        </g>
+        <path d="M355 168h12v17h-12z" fill="#F6D27A"/>
+        <path d="M361 104l20 29h-10l24 35h-68l24-35h-10z" fill="#B9DAA5"/>
+        <path class="float" d="M361 85l4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z" fill="#F6D27A"/>
+        <circle cx="353" cy="141" r="4" fill="#F2A497"/><circle cx="370" cy="154" r="4" fill="#A8D3E6"/>
+        <path d="M0 211h480" fill="none"/>
+        <g class="drift"><path d="M43 205v-28q0-8 9-8h106q25 0 44 30l2 6z" fill="#FFFCF6"/><path d="M44 197h157l3 8H44z" fill="#F2A497"/><path d="M57 178h21v12H57zm31 0h21v12H88zm31 0h21v12h-21zm31 0q17 0 26 12h-26z" fill="#A8D3E6"/></g>
+      </g>
+    </svg>
+    <div class="pad">
+      <p>2026 年 12 月 25–28 日・冬日旅行手帳</p>
+      <h1><span class="mark">台北聖誕</span> 4 日 3 夜</h1>
+      <p>睇聖誕燈飾、行老街，留肚食甜品。</p>
+      <p class="count" id="clock" role="timer" aria-live="off">計算倒數中…</p>
+      <details>
+        <summary>設定去程起飛時間</summary>
+        <form id="departure-form">
+          <label for="departure">12/25 香港時間：</label><input id="departure" type="time" required>
+          <button type="submit">儲存</button> <button id="clear-time" type="button">清除</button>
+          <small id="time-status" role="status"></small>
+        </form>
+      </details>
+    </div>
+  </section>
+  <section id="flights">
+    <h2>✈️ 航班卡</h2>
+    <div class="flights">
+      <article class="card flight"><div class="ticket-head">去程・12/25（五）</div><div class="pad"><h3>HKG → TPE</h3><p>香港 → 桃園國際機場</p><small id="outbound">航班編號及起飛時間：待確認</small></div></article>
+      <article class="card flight"><div class="ticket-head">回程・12/28（一）</div><div class="pad"><h3>TPE → HKG</h3><p>桃園國際機場 → 香港</p><small>航班編號及起飛時間：待確認</small></div></article>
+    </div>
+  </section>
+  <section id="days">
+    <h2>🗺️ 每日行程</h2>
+    <div class="tabs" id="tabs" role="tablist" aria-label="選擇行程日期"></div>
+    <div id="day-panel" role="tabpanel" tabindex="0"></div>
+  </section>
+  <section id="todo">
+    <h2>✅ 出發前待辦</h2>
+    <div class="card pad"><p id="progress" role="status"></p><div class="checks" id="checks"></div></div>
+  </section>
+  <section id="hotel">
+    <h2>🏨 住宿資訊</h2>
+    <div class="card pad">
+      <h3>亞士都精品酒店</h3><p>台北・共 3 晚</p>
+      <div class="dates"><span>入住｜12/25（五）下午</span><span>退房｜12/28（一）早餐後</span></div>
+      <p>Day 1 先放低行李再去華山；Day 4 食完味鼎蛋餅返酒店退房，拎齊行李先出發。正式入住及退房時間以訂房確認信為準。</p>
+    </div>
+  </section>
+  <footer>🎄 台北見！慢慢行，留肚食甜品。</footer>
+</main>
+<script>
+const days=[
+  ['12/25（五）','台北車站・華山・聖誕夜景',[
+    ['抵達後','桃園機場 → A1 台北車站','搭機捷到 A1，喺北車行一轉，睇吓聖誕佈置。','rail walk'],
+    ['午餐','咖啡弄（站前店）','','','booked'],
+    ['下午','亞士都精品酒店 → 華山1914文創園區','先 check-in、放低行李，再去華山行街睇展。','','key'],
+    ['晚餐','六本松壽喜燒','去忠孝復興食晚餐。','','booked'],
+    ['飯後・二揀一','大巨蛋輕鬆逛／信義區聖誕夜景','輕鬆版：遠東 Garden City（SOGO 大巨蛋）。\n夜景版：信義區 DREAM PLAZA ＋ 台北 101。\n揀一條路線，行完返酒店休息。','walk','key']
+  ]],
+  ['12/26（六）','士林天文館・赤峰街・南機場夜市',[
+    ['早餐','蛋要酷手工蛋餅','喺台北車站一帶食早餐。'],
+    ['上午','臺北市立天文科學教育館','搭捷運去士林參觀天文館。','metro','key'],
+    ['午餐','中山站・川畝園麵食館','趁星期六食川畝園；想食日式就揀魚兵衛太春和食處。'],
+    ['下午','赤峰街・誠品南西・D+AF','去 COOKIE886 買曲奇手信。\n想邊行邊飲：60+ Tea Shop 或一沐日（中山南西店）。\n想坐低抖吓：成真咖啡。','walk'],
+    ['晚餐','南機場夜市','由中山搭的士去。來來水餃館、湯包棧、鈺師傅上海生煎包、禾甲蒸臭豆腐可以分住食，最後留肚食捲捲村花生捲冰淇淋。','taxi walk','key'],
+    ['夜晚','精武門功夫按摩 → 家樂福（桂林店）','先去西門町按摩，再去家樂福買零食手信。兩個地方唔係隔籬，攰就搭短程的士；買完直接搭的士返酒店。','walk taxi']
+  ]],
+  ['12/27（日）','萬華早午餐・鐵道部・大稻埕',[
+    ['早上','穗月朝食','去萬華食早午餐。'],
+    ['上午','國立臺灣博物館鐵道部園區','食完去北門站參觀。鐵道部星期一休館，所以安排星期日。','','key'],
+    ['午餐＋甜品','大稻埕魯肉飯 → Gelato Arjan（阿洋義式冰淇淋）','食完魯肉飯，再去食義式冰淇淋。'],
+    ['下午','永樂市場周邊・迪化街','慢慢行：買阿仁牛軋餅、去食芋堂食芋頭甜品，再買迪化街純正麥芽餅。','walk','key'],
+    ['晚餐','晴光市場一帶','喺市場附近搵食，食完返酒店。']
+  ]],
+  ['12/28（一）','味鼎蛋餅・好丘貝果・返香港',[
+    ['早餐','味鼎蛋餅','喺酒店附近食早餐。','walk'],
+    ['早餐後','亞士都精品酒店・退房','返酒店 check-out，拎齊行李。'],
+    ['去機場前・視乎航班','好丘貝果','拖埋行李去買，揀去 A1 順路、拖喼方便嘅分店。出發前確認星期一開門時間同可唔可以預訂。\n如果係早機、好丘未開，就改做前一日買，唔好為咗貝果趕飛機。'],
+    ['回程','A1 台北車站 → 桃園機場 → 香港','由 A1 搭機捷去桃園機場，按機票資料預留車程、報到同安檢時間。','rail plane','key']
+  ]]
+];
+const tasks=[
+  '核對護照及適用嘅台灣入境文件',
+  '確認來回航班編號、起飛時間及航廈',
+  '儲存亞士都精品酒店訂房確認信',
+  '核對咖啡弄同六本松壽喜燒嘅已定安排',
+  '確認天文館、鐵道部同聖誕活動開放安排',
+  '查好丘分店星期一營業時間同預訂安排',
+  '準備悠遊卡、台幣及上網方案',
+  '預留行李位裝曲奇、牛軋餅同零食手信'
+];
+const tags={rail:['🚆 機場捷運','blue'],metro:['🚇 捷運','green'],taxi:['🚕 的士','yellow'],walk:['🚶 步行',''],plane:['✈️ 飛機','pink']};
+const el=id=>document.getElementById(id);
+const get=key=>{try{return localStorage.getItem('taipei-xmas-'+key)}catch{return null}};
+const put=(key,value)=>{try{localStorage.setItem('taipei-xmas-'+key,value);return true}catch{return false}};
+const system=matchMedia('(prefers-reduced-motion: reduce)');
+let reduced=get('motion')==='1';
+function syncMotion(){
+  document.documentElement.classList.toggle('reduce',reduced);
+  el('motion').setAttribute('aria-pressed',String(reduced||system.matches));
+  el('motion').disabled=system.matches;
+  el('motion').textContent=system.matches?'系統已減動':'減少動態';
+}
+el('motion').onclick=()=>{reduced=!reduced;put('motion',reduced?'1':'0');syncMotion()};
+system.addEventListener?.('change',syncMotion);
+syncMotion();
+const valid=t=>/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(t||'');
+let departure=get('departure')||'';
+if(!valid(departure)) departure='';
+el('departure').value=departure;
+const start=Date.parse('2026-12-25T00:00:00+08:00');
+const end=Date.parse('2026-12-29T00:00:00+08:00');
+function tick(){
+  const now=Date.now();
+  const target=Date.parse('2026-12-25T'+(departure||'00:00')+':00+08:00');
+  if(now>=target){
+    el('clock').textContent=now>=end?'🎁 旅程完結・下次再見！':departure?'🎄 旅程開始喇！':'🎄 到出發日喇！';
+    return;
+  }
+  const s=Math.ceil((target-now)/1000);
+  el('clock').textContent=(departure?'距離起飛：':'距離出發日：')+Math.floor(s/86400)+' 日 '+Math.floor(s/3600)%24+' 時 '+Math.floor(s/60)%60+' 分 '+s%60+' 秒';
+}
+function syncFlight(){
+  el('outbound').textContent=departure?'航班編號：待確認｜起飛：'+departure+'（香港時間）':'航班編號及起飛時間：待確認';
+  tick();
+}
+function saveTime(value){
+  departure=value;el('departure').value=value;
+  el('time-status').textContent=put('departure',value)?(value?'已儲存起飛時間。':'已改為倒數到出發日。'):'已更新，但瀏覽器未能儲存設定。';
+  syncFlight();
+}
+el('departure-form').onsubmit=e=>{e.preventDefault();if(valid(el('departure').value))saveTime(el('departure').value)};
+el('clear-time').onclick=()=>saveTime('');
+syncFlight();setInterval(tick,1000);
+el('tabs').innerHTML=days.map(([date],i)=>`<button type="button" role="tab" id="tab-${i}" aria-controls="day-panel" aria-selected="false" tabindex="-1">Day ${i+1}<small>${date}</small></button>`).join('');
+let active=-1;
+function showDay(i,animate=false){
+  const [date,title,stops]=days[i], panel=el('day-panel');
+  days.forEach((_,n)=>{const tab=el('tab-'+n);tab.setAttribute('aria-selected',String(i===n));tab.tabIndex=i===n?0:-1});
+  panel.setAttribute('aria-labelledby','tab-'+i);
+  panel.classList.remove('pop');
+  panel.innerHTML=`<small>DAY ${i+1} ・ ${date}</small><h3>${title}</h3><ol class="timeline">${stops.map(([time,name,text,transport,status])=>`
+    <li class="stop ${status==='key'?'key':''}">
+      <span class="pill">${time}</span>${status==='key'?'<span class="pill pink">★ 必去</span>':status==='booked'?'<span class="pill green">✓ 已定</span>':''}
+      <h3>${name}</h3>${text?`<p>${text}</p>`:''}
+      ${transport?`<div class="tags">${transport.split(' ').map(k=>`<span class="pill ${tags[k][1]}">${tags[k][0]}</span>`).join('')}</div>`:''}
+    </li>`).join('')}</ol>`;
+  if(animate&&active!==i){void panel.offsetWidth;panel.classList.add('pop')}
+  active=i;
+}
+days.forEach((_,i)=>el('tab-'+i).onclick=()=>showDay(i,true));
+el('tabs').addEventListener('keydown',e=>{
+  let i;
+  if(e.key==='ArrowRight')i=(active+1)%days.length;
+  else if(e.key==='ArrowLeft')i=(active+days.length-1)%days.length;
+  else if(e.key==='Home')i=0;
+  else if(e.key==='End')i=days.length-1;
+  else return;
+  e.preventDefault();showDay(i,true);el('tab-'+i).focus();
+});
+const today=Math.floor((Date.now()-start)/86400000);
+showDay(today>=0&&today<days.length?today:0);
+let saved=[];
+try{const a=JSON.parse(get('checks')||'[]');if(Array.isArray(a))saved=a}catch{}
+el('checks').innerHTML=tasks.map((text,i)=>`<label><input type="checkbox" value="${i}" ${saved.includes(i)?'checked':''}><span>${text}</span></label>`).join('');
+function updateChecks(save=false){
+  const checked=[...el('checks').querySelectorAll('input:checked')].map(x=>Number(x.value));
+  const ok=!save||put('checks',JSON.stringify(checked));
+  el('progress').textContent='已完成 '+checked.length+' / '+tasks.length+(ok?'':'（瀏覽器未能儲存）');
+}
+el('checks').onchange=()=>updateChecks(true);
+updateChecks();
+</script>
+</body>
+</html>
